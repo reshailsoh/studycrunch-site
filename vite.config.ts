@@ -12,4 +12,27 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+
+  nitro: {
+    routeRules: {
+      "/privacy.html": {
+        redirect: {
+          to: "/privacy",
+          statusCode: 301,
+        },
+      },
+      "/terms.html": {
+        redirect: {
+          to: "/terms",
+          statusCode: 301,
+        },
+      },
+      "/support.html": {
+        redirect: {
+          to: "/support",
+          statusCode: 301,
+        },
+      },
+    },
+  },
 });
