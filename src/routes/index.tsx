@@ -44,11 +44,18 @@ const faqs = [
 
 function AppStoreBadge() {
   return (
-    <img
-      src="/assets/app-store-badge.svg"
-      alt="Download on the App Store"
-      className="h-14 w-auto"
-    />
+    <a
+      href="https://apps.apple.com/us/app/studycrunch/id6808068669"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Download StudyCrunch on the App Store"
+    >
+      <img
+        src="/assets/app-store-badge.svg"
+        alt="Download on the App Store"
+        className="h-14 w-auto"
+      />
+    </a>
   );
 }
 
@@ -76,7 +83,7 @@ function Index() {
               <h1 className="mt-6 max-w-3xl text-5xl font-extrabold leading-[1.03] text-foreground sm:text-7xl lg:text-8xl">Study smarter.<br /><span className="text-primary">Lock in.</span></h1>
               <p className="mt-7 max-w-xl text-lg leading-8 text-muted-foreground sm:text-xl">Turn your learning material into personalized study sessions, master what matters, and block distractions when it’s time to focus.</p>
                <div className="mt-9 flex flex-wrap items-center gap-4"><AppStoreBadge /><a href="#features" className="inline-flex h-14 items-center gap-2 px-2 text-sm font-bold text-foreground hover:text-primary">See how it works <ArrowRight className="size-4" /></a></div>
-              <p className="mt-4 text-xs text-muted-foreground">For iPhone · App Store link coming soon</p>
+              <p className="mt-4 text-xs text-muted-foreground">For iPhone · Available now on the App Store</p>
             </div>
             <ProductPlaceholder />
           </div>
